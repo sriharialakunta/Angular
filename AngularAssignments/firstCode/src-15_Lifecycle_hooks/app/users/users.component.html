@@ -1,0 +1,6 @@
+<h2>Users Component</h2>
+<p>Country: {{ country }}</p>
+<ul>
+  <li *ngFor="let user of users" (click)="selectUser(user)">{{ user }}</li>
+</ul>
+

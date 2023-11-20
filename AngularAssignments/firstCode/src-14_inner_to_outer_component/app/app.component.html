@@ -1,0 +1,5 @@
+<p>app works!</p>
+
+<h1>App Component</h1>
+<p *ngIf="selectedUser">Selected User: {{ selectedUser }}</p>
+<app-users (userClicked)="onUserClicked($event)"></app-users>

@@ -1,0 +1,16 @@
+<p>users works!</p>
+
+Users List from User Service By Users Component:
+<ul>
+  <li *ngFor="let allUser of allUsers">
+    {{ allUser | json }}
+  </li>
+</ul>
+
+<h2>Departments List From Department Service By Users Component:</h2>
+<h3>
+  <li *ngFor="let department of departments">
+    {{ department | json }}
+  </li>
+</h3>
+<h1>{{ msg }}</h1>

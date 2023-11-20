@@ -1,0 +1,32 @@
+<body>
+  <div class="hero">
+    <nav>
+      <h2 class="logo"><a href="items">Fresh<span> Meat</span></a></h2>
+      <ul>
+        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+        <li><a routerLink="/contactinfo" routerLinkActive="active">Contact Us</a></li>
+        <li><a routerLink="/signup" routerLinkActive="active">Sign up</a></li>
+        <li><button><a style="color:white;" routerLink="/login" routerLinkActive="active">Log in</a></button></li>
+      </ul>
+    </nav>
+    <form class="search">
+      <input type="text" placeholder="Search" aria-label="Search">
+    </form>
+  </div>
+  <!-- <div>
+    <ul *ngFor="let item of items">
+      <li>{{item.itemName}}</li>
+      <li>{{item.cost| currency:"INR"}}</li>
+      <li>{{item.location}}</li>
+      <li>{{item.mobile}}</li>
+    </ul>
+  </div>   -->
+  <!-- <div class="wrapper">
+    <div class="card" *ngFor="let item of items">
+      <img src="/assets/img/meat-shop.jpg">
+      <h1>{{item.itemName}}</h1>
+      <p>Simple paragraph {{item.itemName}}</p>
+    </div>
+  </div> -->
+</body>
+<router-outlet></router-outlet>

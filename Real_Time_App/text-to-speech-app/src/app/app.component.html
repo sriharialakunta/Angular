@@ -1,0 +1,17 @@
+<body>
+  <!-- text-to-speech.component.html -->
+  <div class="textToSpeech">
+    <textarea [(ngModel)]="textToRead" rows="4" cols="50">
+    This is a default text inside the textarea.
+  </textarea>
+    <button (click)="speakText()">Speak Text</button>
+  </div>
+  <!-- speech-to-text.component.html -->
+  <div class="speechToText">
+    <h1>Voice recognition</h1>
+    <button style="margin: 10px;" (click)="startService()">Start</button>
+    <button style="margin: 10px;" (click)="stopService()">Stop</button>
+    <p>{{speechToTextService.text}}</p>
+  </div>
+</body>
+<router-outlet></router-outlet>

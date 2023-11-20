@@ -1,0 +1,11 @@
+<h2>Customer Details</h2>
+<p>Customer ID: {{ customerId }}</p>
+<p>Customer Name: {{ getCustomerName(customerId) }}</p>
+
+<button (click)="navigateToCustomers()"><a [routerLink]="['/Customer', customerId]">Back to Customers</a></button>
+
+
+
+
+
+

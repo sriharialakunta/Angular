@@ -1,0 +1,33 @@
+
+<p>Filter By :
+<input type="text" [(ngModel)]="searchTerm" placeholder="Search by employee name" style="width: 200px;"/>
+<br>
+  <label #count id="count">Total number of employees: {{(employees | employeeFilter:searchTerm).length}}</label>
+</p>
+<div class="list_of_employees">
+<table border="2">
+    <tr>
+      <th> Emp ID </th>
+      <th> Name </th>
+      <th> Location </th>
+      <th> Email </th>
+      <th> Mobile</th>
+      <th> Edit </th>
+      <th> Delete </th>
+    </tr>
+    <tbody>
+      <tr *ngFor="let e of employees | employeeFilter :searchTerm ">
+        <td>{{ e.id }}</td>
+        <td>{{ e.name }}</td>
+        <td>{{ e.location }}</td>
+        <td>{{ e.email }}</td>
+        <td>{{ e.mobile }}</td>
+        <td><a routerLink="/editEmployees/{{ e.id }}">Edit-{{e.id}}</a></td>
+        <!-- <td><a (click)="deleteEmployee(e.id)">Delete-{{e.id}}</a></td> -->
+        <td><button (click)="deleteEmployee(e.id)" style="background-color: rgb(224, 111, 50); 
+         border-radius: 69px;
+        ">Delete-{{e.id}}</button></td>
+      </tr>
+    </tbody>
+</table>
+</div>

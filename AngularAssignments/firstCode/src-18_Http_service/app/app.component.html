@@ -1,0 +1,31 @@
+<p>app works!</p>
+<h2>Employee Details From Json Server</h2>
+<table border="1">
+  
+    <tr>
+      <th>Id</th>
+      <th>Name of Employee</th>
+    </tr>
+  
+  <tbody>
+    <tr *ngFor="let e of emps">
+      <td>{{ e.id }}</td>
+      <td>{{ e.name }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2> Data From the Json File</h2>
+{{empls | json}}
+
+<h2> Fake Data From Test Rest API </h2>
+<p>{{ users | json }}</p>
+
+<div>
+	<h1>Data From In Memory Service </h1>
+	<ul>
+		<li *ngFor="let name of names">
+			{{name.name}}
+		</li>
+	</ul>
+</div>

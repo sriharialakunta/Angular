@@ -1,0 +1,10 @@
+<p>customers works!</p>
+<h2>Customers</h2>
+<table>
+  <th>Id</th>
+  <th>Customer Details</th>
+  <tr *ngFor="let customer of customers">
+    <td>{{ customer.id }}</td>
+    <td><a [routerLink]="['/customers', customer.id]">View Details</a></td>
+  </tr>
+</table>

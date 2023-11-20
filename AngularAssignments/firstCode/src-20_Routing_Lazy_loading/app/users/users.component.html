@@ -1,0 +1,10 @@
+<p>users works!</p>
+<h2>Users</h2>
+<table>
+  <th>Id</th>
+  <th>User Details</th>
+  <tr *ngFor="let user of users">
+    <td>{{ user.id }}</td>
+    <td><a [routerLink]="['/users', user.id]">View Details</a></td>
+  </tr>
+</table>

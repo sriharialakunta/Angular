@@ -1,0 +1,23 @@
+<p>users works!</p>
+<div *ngIf="emptyUsers.length === 0">No users available.</div>
+<br />
+<div *ngIf="1 < 10">
+  <table border="1" *ngIf="users.length > 0">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.location }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h2>List of Users</h2>
+<ul>
+  <li *ngFor="let user of users">{{ user | json }}</li>
+</ul>

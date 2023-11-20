@@ -1,0 +1,22 @@
+.login-container {
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.form-field {
+margin-bottom: 10px;
+}
+label {
+width: 120px; /* Adjust the width as needed */
+display: inline-block;
+}
+h2{
+text-align: center;
+}
+button{
+    background-color:rgb(129, 129, 241);
+    border-radius: 69px;
+    font-size: large;
+    height: auto;
+}

@@ -1,0 +1,12 @@
+<h2>Customers List</h2>
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Customer Details</th>
+  </tr>
+  <tr *ngFor="let customer of customers">
+    <td>{{ customer.id }}</td>
+  
+    <td><a routerLink="/customers/{{ customer.id }}">View Details</a></td><br>
+  </tr>
+</table>
